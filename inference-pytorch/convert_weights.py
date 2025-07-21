@@ -112,7 +112,7 @@ def test_models(torch_model, tf_model):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--tf_weights", type=str, help="path to TransNet V2 weights",
-                        default="../inference/transnetv2-weights/")
+                        default="../inference/transnetv2-weights")
     parser.add_argument('--test', action="store_true", help="run tests")
     args = parser.parse_args()
 
